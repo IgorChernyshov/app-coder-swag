@@ -29,25 +29,25 @@
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2u-ue-cfc">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="180" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2u-ue-cfc">
                                 <rect key="frame" x="0.0" y="60.5" width="375" height="542.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="8NE-yb-OKo" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="154"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="180" id="8NE-yb-OKo" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8NE-yb-OKo" id="XmQ-cF-7wv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8NE-yb-OKo" id="XmQ-cF-7wv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="iiZ-WN-J7q">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="173.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtg-8v-Msk">
-                                                    <rect key="frame" x="144.5" y="62" width="85" height="30"/>
+                                                    <rect key="frame" x="100" y="75" width="175" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="85" id="O8N-UZ-ZWN"/>
-                                                        <constraint firstAttribute="height" constant="30" id="pPu-cM-SIs"/>
+                                                        <constraint firstAttribute="height" constant="30" id="MhM-b1-zZf"/>
+                                                        <constraint firstAttribute="width" constant="175" id="vzq-Lz-hYG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,17 +55,17 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="iiZ-WN-J7q" firstAttribute="top" secondItem="XmQ-cF-7wv" secondAttribute="top" constant="3" id="6Im-ip-nyd"/>
                                                 <constraint firstItem="iiZ-WN-J7q" firstAttribute="leading" secondItem="XmQ-cF-7wv" secondAttribute="leading" id="IJ1-qk-ccu"/>
-                                                <constraint firstItem="gtg-8v-Msk" firstAttribute="centerY" secondItem="XmQ-cF-7wv" secondAttribute="centerY" id="JYc-f9-NG4"/>
-                                                <constraint firstItem="iiZ-WN-J7q" firstAttribute="top" secondItem="XmQ-cF-7wv" secondAttribute="top" id="cNc-Vh-geT"/>
-                                                <constraint firstAttribute="bottom" secondItem="iiZ-WN-J7q" secondAttribute="bottom" id="iXi-h1-XtC"/>
-                                                <constraint firstItem="gtg-8v-Msk" firstAttribute="centerX" secondItem="XmQ-cF-7wv" secondAttribute="centerX" id="qte-sW-ZEh"/>
+                                                <constraint firstItem="gtg-8v-Msk" firstAttribute="centerX" secondItem="XmQ-cF-7wv" secondAttribute="centerX" id="XXT-cb-E0U"/>
+                                                <constraint firstAttribute="bottom" secondItem="iiZ-WN-J7q" secondAttribute="bottom" constant="3" id="aaB-ar-fwW"/>
+                                                <constraint firstItem="gtg-8v-Msk" firstAttribute="centerY" secondItem="XmQ-cF-7wv" secondAttribute="centerY" id="jCH-bW-PTd"/>
                                                 <constraint firstAttribute="trailing" secondItem="iiZ-WN-J7q" secondAttribute="trailing" id="uQf-90-JhJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="categoryImage" destination="iiZ-WN-J7q" id="C7A-LP-LbH"/>
-                                            <outlet property="categoryLabel" destination="gtg-8v-Msk" id="78X-PC-Gau"/>
+                                            <outlet property="categoryTitle" destination="gtg-8v-Msk" id="C7W-52-dcV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,7 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODERSWAG" id="ghH-OB-1uU"/>
                     <connections>
-                        <outlet property="categoryTable" destination="a2u-ue-cfc" id="fN4-DY-bOA"/>
+                        <outlet property="categoryTable" destination="a2u-ue-cfc" id="NXi-FV-rWI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
